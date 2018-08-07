@@ -1,0 +1,292 @@
+html, body, div, span, applet, object, iframe, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, 
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl,
+ dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+html {
+	background: RGBA(44, 71, 130, .11);
+	padding: 0px;
+	margin: 0px;
+	margin-top: 0px;
+	background-position: center;
+	background-image: url("media/bkgd img.jpg");
+	background-size: cover;
+	min-height: 100%;
+}
+h1 {
+	font-size: 1.2em;
+	color: white;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+h4 {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+.headerBox {
+	background-color: black;
+	opacity: .5;
+	margin-top: 0px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.topheading {
+	margin-top: 12px;
+}
+
+
+.borderBoxHeader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border: 2px solid red;*/
+	height: 90px;
+	width: 400px;
+	margin: auto;
+	margin-top: 40px;
+	border-radius: 6px;
+}
+.borderBoxBody {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border: 2px solid red;*/
+	height: 200px;
+	width: 400px;
+	margin: auto;
+	margin-top: 40px;
+	border-radius: 6px;
+}
+.borderBoxFooter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border: 2px solid red;*/
+	height: 70px;
+	width: 400px;
+	margin: auto;
+	border-radius: 6px;
+}
+
+.classTest {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: red;
+	width: 320px;
+	border-radius: 6px;
+	height: 50px;
+	background-color: rgba(200,200,250,0.1);
+	border: 1px solid rgba(200,200,250,0.2);
+	opacity: .7;
+	/*transition: all .5s ease-in-out;*/
+}
+.classTest:hover {
+/*	background-color: rgba(200,200,250,0.3);
+	border: 1px solid rgba(200,200,250,0.4);*/
+	cursor: pointer;
+	opacity: 1;
+
+}
+.classTestInactive {
+	opacity: 0.3;
+	filter: blur(2px);
+	transition: all .5s ease-in-out;
+}
+.classTestInactive:hover {
+	opacity: 0.3;
+	filter: blur(2px);
+	transition: all .5s ease-in-out;
+}
+.classTestCorrect {
+	background-color: rgba(125,255,107,0.2);
+	border: 1px solid rgba(200,200,250,0.2);
+	transition: all .5s ease-in-out;
+	/*background-color: green;*/
+}
+.classTestCorrect:hover {
+	background-color: rgba(125,255,107,0.2);
+	border: 1px solid rgba(200,200,250,0.2);
+	transition: all .5s ease-in-out;
+	/*background-color: green;*/
+}
+.classTestIfCorrect {
+	background-color: rgba(125,255,107,0.2);
+	border: 1px solid rgba(200,200,250,0.2);
+	transition: all .1s ease-in-out;
+	opacity: .7;
+	/*background-color: green;*/
+}
+.classTestIfCorrect:hover {
+	background-color: rgba(125,255,107,0.2);
+	border: 1px solid rgba(200,200,250,0.2);
+	transition: all .1s ease-in-out;
+	opacity: .7;
+	/*background-color: green;*/
+}
+.classTestWrong {
+	background-color: rgba(255,65,75,0.2);
+	border: 1px solid rgba(200,200,250,0.2);
+	transition: all .1s ease-in-out;
+	opacity: .7;
+}
+.classTestWrong:hover {
+	background-color: rgba(255,65,75,0.2);
+	border: 1px solid rgba(200,200,250,0.2);
+	transition: all .1s ease-in-out;
+	opacity: .7;
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: .7;
+	}
+	to {
+		opacity: 0;
+	}
+}
+.fade-out {
+	animation: fadeOut 1s;
+}
+@keyframes fadeOut2 {
+	from {
+		opacity: .3;
+	}
+	to {
+		opacity: 0;
+	}
+}
+.fade-out2 {
+	animation: fadeOut2 1s;
+}
+
+
+.classTestQuestion {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: red;
+	width: 320px;
+	border-radius: 6px;
+	height: 80px;
+	background-color: rgba(200,200,250,0.1);
+	border: 1px solid rgba(200,200,250,0.2);
+	opacity: .7;
+	transition: all .5s ease-in-out;
+}
+.classTestQuestionInactive {
+	opacity: 0.3;
+	filter: blur(1px);
+	transition: all .5s ease-in-out;
+}
+
+
+.quizBox {
+	width: 420px;
+	height: 540px;
+	margin: auto;
+	margin-top: 80px;
+	border: 2px solid rgba(200,200,250,0);
+	border-radius: 6px;
+	background-color: black;
+	opacity: .7;
+	transition: all .6s ease-in-out;
+	/*filter: blur(1px);*/
+	transition: all .8s ease-in-out;
+}
+.quizBoxDarker {
+	opacity: .8;
+	transition: all .8s ease-in-out;
+}
+
+
+.classTestAnswer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: red;
+	width: 320px;
+	border-radius: 6px;
+	height: 50px;
+	background-color: rgba(200,200,250,0.1);
+	border: 1px solid rgba(200,200,250,0.2);
+	opacity: .7;
+	transition: all .5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+.nextButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4px;
+	width: 320px;
+	height: 50px;
+	border-radius: 6px;
+	opacity: 0.7;
+	text-align: center;
+	font-size: 1em;
+	padding-top: 5px;
+	background-color: rgba(200,200,250,0.1);
+	border: 1px solid rgba(200,200,250,0.2);
+	transition: all .7s ease-in-out;
+}
+.nextButton:hover {
+	cursor: pointer;
+/*	background-color: rgba(200,200,250,.1);*/
+	/*font-size: 1.05em;*/
+	opacity: 1;
+ }
+.nextButtonInactive {
+	opacity: .3;
+	filter: blur(2px);
+	transition: all .9s ease-in-out;
+}
+.nextButtonInactive:hover {
+	opacity: .3;
+	cursor: default;
+}
+.response {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: red;
+	width: 320px;
+	border-radius: 6px;
+	height: 50px;
+	background-color: rgba(200,200,250,0.1);
+	border: 1px solid rgba(200,200,250,0.2);
+	opacity: .7;
+	transition: all .5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
